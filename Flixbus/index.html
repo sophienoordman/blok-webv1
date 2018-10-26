@@ -5,63 +5,167 @@
     <title>Flixbus</title>
     <meta charset="utf-8" />
     <meta name="author" content="???" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-       <img src="images/Artboard%201.png" alt="Logo Flixbus">
         <nav>
-            <ul>
-                <a href="index.html">Home</a>
-                <a href="flixbus.html">Over Flixbus</a>
-                <a href="oververhalen.html">Over Verhalen</a>
-                <a href="favorieten.html">Favoriete verhalen</a>
-                <a href="profiel.html">Profiel</a>
-                <a href="contact.html">Contact</a>
-            </ul>
-        </nav>
-
-        <nav>
-            <form action="http://vasllis.nl">
-                <label>Zoeken</label>
+            <a href="index.html"><img src="images/flixbus_logo.svg" alt="Logo Flixbus"></a>
+            <!--
+            <form action="html">
+                <label>Zoeken
                 <input type="search" placeholder="Zoek een verhaal">
-                <button>Zoeken</button>
+                <button>Zoeken</button></label>
             </form>
-        </nav>
-
-        <nav>
+-->
             <ul>
-                <a href="favorieten.html">Favoriete verhalen</a>
-                <a href="profiel.html">Profiel</a>
+                <li><a href=""><img src="images/icon_zoek.svg" alt="Zoek een verhaal"/></a></li>
+                <li><a href="downloadlijst.html"><img src="images/icon_download_wit.svg" alt="Lijst met gedownloade verhalen"/></a></li>
+                <li><a href="favorieten.html"><img src="images/icon_hartje_wit.svg" alt="favoriete verhalenlijst"/></a></li>
+                <li><a href="aanmeldpagina.html"><img src="images/icon_profiel_wit.svg"/></a></li>
             </ul>
         </nav>
+        <section>
+            <h1>De 99 verhalen voor onderweg</h1>
+        </section>
     </header>
 
-
-
     <main>
-       <section>
+        <div>
+            <button class="buttonsorteren">Sorteren</button>
+            <button class="buttonfilteren">Filteren</button>
+        </div>
+        <!--soteren-->
+
+        <div>
+            <div class="sorteren">
+                <form>
+                    <h2>Sorteren</h2>
+                    <fieldset>
+                        <legend>Op volgorde van</legend>
+                        <label><input type="radio" name="sorteren">A-Z verhaal</label>
+                        <label><input type="radio" name="sorteren">Best beoordeeld</label>
+                        <label><input type="radio" name="sorteren">Kleinste bestandgroote</label>
+                        <label><input type="radio" name="sorteren">Meest gedownload</label>
+                        <div>
+                            <a href="">Maak ongedaan</a>
+                            <a href="#" class="button secondairy buttonsorteren">Verhalen bekijken</a>
+                        </div>
+                    </fieldset>
+
+                </form>
+            </div>
+            <!--        filteren-->
+            <div class="filteren">
+                <form>
+                    <h2>Filteren</h2>
+                    <fieldset>
+                        <legend>Leestijd</legend>
+                        <label><input type="range" name="sorteren"></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Onderwerpen</legend>
+                        <label><input type="checkbox">Spel</label>
+                        <label><input type="checkbox">Liefde</label>
+                        <label><input type="checkbox">Verdriet</label>
+                        <label><input type="checkbox">Horror</label>
+                        <label><input type="checkbox">Psygisch</label>
+                        <label><input type="checkbox">Wereld</label>
+                        <label><input type="checkbox">Fantasy</label>
+                        <label><input type="checkbox">Intens</label>
+                        <div>
+                            <a href="">Maak ongedaan</a>
+                            <a href="#" class="button buttonfilteren secondairy">(2) Verhalen bekijken</a>
+                        </div>
+                    </fieldset>
+
+
+
+                </form>
+            </div>
+        </div>
+
+        <!--Verhalen-->
+        <section>
             <article>
-                <h2>Sonnet</h2>
-                <p>kort, alle leeftijden</p>
-                <a href="">Favoriet</a>
-                <a href="verhaal_1" class="button-primairy">Direct lezen</a>
+                <img src="images/Verhaal_Sonnet_Intro.jpg" alt="Afbeelding verhaal" />
+                <h2>Stijloefeningen (85) – Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’</h2>
+
+                <footer>
+                    <p><img src="images/icon_klok_grijs.svg" alt="Leestijd klok" /> 15 min</p>
+                    <div>
+                        <p><i class="fas fa-star"></i></p>
+                        <p>5</p>
+                    </div>
+                    <a class="hartje"><img src="images/icon_hartje_groen.svg" alt="Favorieten hartje" /img></a>
+                    <a href="hetverhaalsonnet.html" class="button">Lees dit verhaal</a>
+                </footer>
+            </article>
+            <article>
+                <img src="images/Verhaal_Sonnet_Intro.jpg" alt="Afbeelding verhaal" />
+                <h2>Stijloefeningen (85) – Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’</h2>
+
+                <footer>
+                    <p><img src="images/icon_klok_grijs.svg" alt="Leestijd klok" /> 15 min</p>
+                    <div>
+                        <p><i class="fas fa-star"></i></p>
+                        <p>5</p>
+                    </div>
+                    <a class="hartje"><img src="images/icon_hartje_groen.svg" alt="Favorieten hartje" /img></a>
+                    <a href="verhaal_1" class="button">Lees dit verhaal</a>
+                </footer>
+            </article>
+            <article>
+                <img src="images/Verhaal_Sonnet_Intro.jpg" alt="Afbeelding verhaal" />
+                <h2>Stijloefeningen (85) – Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’</h2>
+
+                <footer>
+                    <p><img src="images/icon_klok_grijs.svg" alt="Leestijd klok" /> 15 min</p>
+                    <div>
+                        <p><i class="fas fa-star"></i></p>
+                        <p>5</p>
+                    </div>
+                    <a class="hartje"><img src="images/icon_hartje_groen.svg" alt="Favorieten hartje" /img></a>
+                    <a href="verhaal_1" class="button">Lees dit verhaal</a>
+                </footer>
+            </article>
+            <article>
+                <img src="images/Verhaal_Sonnet_Intro.jpg" alt="Afbeelding verhaal" />
+                <h2>Stijloefeningen (85) – Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’</h2>
+
+                <footer>
+                    <p><img src="images/icon_klok_grijs.svg" alt="Leestijd klok" /> 15 min</p>
+                    <div>
+                        <p><i class="fas fa-star"></i></p>
+                        <p>5</p>
+                    </div>
+                    <a class="hartje"><img src="images/icon_hartje_groen.png" alt="Favorieten hartje" /img></a>
+                    <a href="verhaal_1" class="button">Lees dit verhaal</a>
+                </footer>
+            </article>
+            <article>
+                <img src="images/Verhaal_Sonnet_Intro.jpg" alt="Afbeelding verhaal" />
+                <h2>Stijloefeningen (85) – Presentator die ten onrechte denkt aansluiting te hebben gevonden bij ‘de kids’</h2>
+
+                <footer>
+                    <p><img src="images/icon_klok_grijs.svg" alt="Leestijd klok" /> 15 min</p>
+                    <div>
+                        <p><i class="fas fa-star"></i></p>
+                        <p>5</p>
+                    </div>
+                    <a class="hartje"><img src="images/icon_hartje_groen.png" alt="Favorieten hartje" /img></a>
+                    <a href="verhaal_1" class="button">Lees dit verhaal</a>
+                </footer>
             </article>
 
-            <article>
-                <h2>Sonnet</h2>
-                <p>kort, alle leeftijden</p>
-                <a href="" class="button_favoriet">Favoriet</a>
-                <a href="verhaal_1" class="button-primairy">Direct lezen</a>
-            </article>
         </section>
+
     </main>
 
-    <footer>
-
-    </footer>
-
+    <script src="scripts/flixbus.js"></script>
 </body>
 
 </html>
