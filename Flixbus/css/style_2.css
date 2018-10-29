@@ -27,7 +27,6 @@ img {
 nav {
     background-color: #73d700;
     display: flex;
-    justify-content: center;
     padding: 0.6em;
     justify-content: space-between;
     align-items: center;

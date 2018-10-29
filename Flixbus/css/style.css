@@ -15,10 +15,12 @@ body {
     background-repeat: no-repeat;
     padding-bottom: 15em;
 }
+
 .hartje {
     /* zorg dat hartje link niet klikbaar is */
     pointer-events: none;
 }
+
 .hartje img {
     /* zorg dat afbeelding in hartje link wel klikbaar is */
     pointer-events: all;
@@ -240,13 +242,14 @@ article footer a:first-of-type img {
 a {
     text-decoration: none;
     color: #00b5e2;
+
     :hover {
         text-decoration: underline;
     }
 }
 
 .button {
-        font-family: "Roboto Condensed", "Arial", sans-serif;
+    font: inherit;
     font-weight: 400;
     padding: 0.6em 0.9em;
     /*    min-width: 9em;*/
@@ -343,6 +346,7 @@ fieldset button {
     body {
         background-image: url('../images/footer_tab_desk.png');
     }
+
     main section {
         display: grid;
         grid-template-columns: repeat(2, 20em);
@@ -351,7 +355,9 @@ fieldset button {
         margin-left: auto;
         margin-right: auto;
     }
-
+    article h2 {
+            height: 4.4em;
+    }
 
 }
 
@@ -364,9 +370,11 @@ fieldset button {
     main > div:first-of-type {
         display: none;
     }
+
     header section {
         background-image:
     }
+
     main {
         display: grid;
         grid-template-columns: repeat(3, 20em);
@@ -380,7 +388,8 @@ fieldset button {
     main section > article:first-of-type {
         grid-column: span 2;
     }
-        .sorteren {
+
+    .sorteren {
         display: block;
     }
 
@@ -395,4 +404,16 @@ fieldset button {
         height: auto;
     }
 
+    article:nth-of-type(2) h2 {
+        height: 6.3em;
+    }
+    article:nth-of-type(3) h2 {
+        height: 6.3em;
+    }
+    article:nth-of-type(4) h2 {
+        height: 6.3em;
+    }
+article:nth-of-type(5) h2 {
+        height: 6.3em;
+    }
 }

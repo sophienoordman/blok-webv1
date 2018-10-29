@@ -21,9 +21,10 @@ var filteren = document.querySelector('.filteren');
 var knopFilteren = document.querySelectorAll('.buttonfilteren');
 
 var hartjes = document.querySelectorAll('.hartje');
-
 var favlijst = document.querySelector('nav ul li:nth-of-type(3) img');
 
+var download = document.querySelectorAll('.download');
+var downloadlijst = document.querySelector('nav ul li:nth-of-type(3)');
 
 
 function sorterentoggle (){
@@ -49,12 +50,34 @@ function hartjeKlik(event) {
 
     setTimeout(
         function() {
-            favlijst.src= "../images/icon_hartje_grijs.svg";
+            favlijst.src= "../images/icoon_hartje_wit_plus1.gif";
         }
-        , 1500
+        , 150
     );
 }
 
+function downloadKlik(event) {
+    event.preventDefault();
+
+    var download = event.target;
+
+    if (download.classList.contains('bij')) {
+        download.classList.remove('bij');
+        download.src = "../images/icon_downloaden_orangje.gif";
+    } else {
+        download.classList.add('bij');
+        download.src = "../images/icon_downloaden_grijs.svg";
+    };
+
+    setTimeout(
+        function () {
+            downloadlijst.src=
+                "../images/icon_downdoad_wit_1.gif";
+        }
+        , 350
+    );
+
+}
 
 
 
@@ -72,7 +95,9 @@ for (var i=0; i < hartjes.length; i++) {
 
 
 
-
+for (var i=0; i < download.length; i++) {
+    download[i].addEventListener('click', downloadKlik);
+}
 
 
 
