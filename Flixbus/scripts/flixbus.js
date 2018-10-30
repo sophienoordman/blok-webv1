@@ -39,6 +39,7 @@ function hartjeKlik(event) {
     event.preventDefault(); // wat je normaal doet, doe het niet
     var hartje = event.target; // event.target = het geklikte element (als het goed is de img);
     console.log(hartje);
+    console.log(hartje.src);
     // check of hartje al aangeklikt is of niet door ' aan' class te bekijken
     if (hartje.classList.contains('aan')) {
         hartje.classList.remove('aan'); // hartje was aan, dus remove aan
@@ -50,14 +51,13 @@ function hartjeKlik(event) {
 
     setTimeout(
         function() {
-            favlijst.src= "https://sophienoordman.github.io/blok-webv1/Flixbus/images/icoon_hartje_wit_plus1.gif";
+            favlijst.src= "../images/icoon_hartje_wit_plus1.gif";
         }
         ,400
     );
 }
 
 
-https://sophienoordman.github.io/blok-webv1/images/icoon_hartje_wit_plus1.gif
 
 function downloadKlik(event) {
     event.preventDefault();
@@ -66,9 +66,7 @@ function downloadKlik(event) {
 
     if (download.classList.contains('bij')) {
         download.classList.remove('bij');
-        console.log(download.src);
-        download.src = "https://sophienoordman.github.io/blok-webv1/Flixbus/images/icon_downloaden_orangje.gif";
-        console.log(download.src);
+        download.src = "../images/icon_downloaden_orangje.gif";
     } else {
         download.classList.add('bij');
         download.src = "../images/icon_downloaden_grijs.svg";
