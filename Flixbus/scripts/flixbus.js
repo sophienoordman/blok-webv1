@@ -51,7 +51,8 @@ function hartjeKlik(event) {
     } else {
         console.log("hier dan");
         hartje.classList.add('aan'); // hartje was uit, dus add aan
-        hartje.src = "../images/icon_hartje_groen.gif";//hier gif plaatsen
+        hartje.src = "https://sophienoordman.github.io/blok-webv1/Flixbus/images/icon_hartje_groen.svg";
+        //hartje.src = "../images/icon_hartje_groen.gif";//hier gif plaatsen
     };
 
     setTimeout(
