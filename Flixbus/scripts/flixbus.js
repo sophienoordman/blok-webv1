@@ -43,7 +43,8 @@ function hartjeKlik(event) {
     // check of hartje al aangeklikt is of niet door ' aan' class te bekijken
     if (hartje.classList.contains('aan')) {
         hartje.classList.remove('aan'); // hartje was aan, dus remove aan
-        hartje.src = "../images/icon_hartje_groen_leeg.gif";
+        hartje.setAttribute("src", "../images/icon_hartje_groen_leeg.gif");
+        //hartje.src = "../images/icon_hartje_groen_leeg.gif";
     } else {
         hartje.classList.add('aan'); // hartje was uit, dus add aan
         hartje.src = "../images/icon_hartje_groen.gif";//hier gif plaatsen
