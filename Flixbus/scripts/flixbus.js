@@ -48,6 +48,7 @@ function hartjeKlik(event) {
         //hartje.src = "../images/icon_hartje_groen_leeg.gif";
         console.log("nog hier");
     } else {
+        console.log("hier dan");
         hartje.classList.add('aan'); // hartje was uit, dus add aan
         hartje.src = "../images/icon_hartje_groen.gif";//hier gif plaatsen
     };
