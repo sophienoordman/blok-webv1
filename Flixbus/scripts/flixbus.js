@@ -41,9 +41,12 @@ function hartjeKlik(event) {
     // check of hartje al aangeklikt is of niet door ' aan' class te bekijken
     if (hartje.classList.contains('aan')) {
         hartje.classList.remove('aan'); // hartje was aan, dus remove aan
-    console.log(hartje.getAttribute("src"));
+
+        console.log("hier");
+
         hartje.setAttribute("src", "https://sophienoordman.github.io/blok-webv1/Flixbus/images/icon_hartje_groen.svg");
         //hartje.src = "../images/icon_hartje_groen_leeg.gif";
+        console.log("nog hier");
     } else {
         hartje.classList.add('aan'); // hartje was uit, dus add aan
         hartje.src = "../images/icon_hartje_groen.gif";//hier gif plaatsen
