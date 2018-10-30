@@ -38,12 +38,11 @@ function filtertoggle (){
 function hartjeKlik(event) {
     event.preventDefault(); // wat je normaal doet, doe het niet
     var hartje = event.target; // event.target = het geklikte element (als het goed is de img);
-    console.log(hartje);
-    console.log(hartje.getAttribute("src"));
     // check of hartje al aangeklikt is of niet door ' aan' class te bekijken
     if (hartje.classList.contains('aan')) {
         hartje.classList.remove('aan'); // hartje was aan, dus remove aan
-        hartje.setAttribute("src", "../images/icon_hartje_groen_leeg.gif");
+    console.log(hartje.getAttribute("src"));
+        hartje.setAttribute("src", "https://sophienoordman.github.io/blok-webv1/Flixbus/images/icon_hartje_groen.svg");
         //hartje.src = "../images/icon_hartje_groen_leeg.gif";
     } else {
         hartje.classList.add('aan'); // hartje was uit, dus add aan
