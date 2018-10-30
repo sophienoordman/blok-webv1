@@ -50,11 +50,13 @@ function hartjeKlik(event) {
 
     setTimeout(
         function() {
-            favlijst.src= "../images/icoon_hartje_wit_plus1.gif";
+            favlijst.src= "https://sophienoordman.github.io/blok-webv1/Flixbus/images/icoon_hartje_wit_plus1.gif";
         }
         ,400
     );
 }
+
+
 
 function downloadKlik(event) {
     event.preventDefault();
