@@ -1,3 +1,16 @@
+/*
+
+> - direct element in een element, pakt alleen het eerste ding
+eerste laag
+
+nth-of-type() - pakt alle x uit een ding (werkt niet al het allereeste is of aller staatse)
+
+first-of-type
+last-of-type  - deze pakken alle 1e of laatste uit een ding
+
+*/
+
+
 * {
     margin: 0px;
     box-sizing: border-box;
@@ -9,7 +22,7 @@ body {
     font-weight: 300;
     line-height: 1.375em;
     color: #444;
-    background-image: url('../images/hetverhaal.png');
+/*    background-image: url('../images/hetverhaal.png');*/
     /*    background-position: bottom;*/
     background-size: 100%;
     background-repeat: no-repeat;
@@ -51,16 +64,17 @@ nav li {
 
 /*hoofd*/
 
-section {
+
+section:first-of-type {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 1em;
-max-width: 40em;
+    max-width: 40em;
     margin-left: auto;
     margin-right: auto;
 }
 
 section h1 {
-        padding-top: 0.5em;
+    padding-top: 0.5em;
     padding-bottom: 0.2em;
 
 }
@@ -76,8 +90,8 @@ section div {
 
 
 /*download*/
-section div >a:first-of-type {
-        margin-right: auto;
+section div > a:first-of-type {
+    margin-right: auto;
     margin-left: 0.5em;
 }
 
@@ -86,6 +100,38 @@ section div > a img {
     max-width: 2.9em;
     min-width: 2.5em;
 
+
+}
+
+/*reacties*/
+section:nth-of-type(2) {
+    margin-bottom: 10em;
+}
+
+
+
+/*Gelezen balk*/
+section:nth-of-type(3) {
+    background-color: #d1d1d1;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+}
+
+section:nth-of-type(3) button {
+    display: block;
+
+    padding: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+    background-color:  #d1d1d1;
+    border-radius: 5px;
+    font-family: inherit;
+    min-width: 10em;
+    font-size: 1em;
+    border: 1px solid #444444;
 
 }
 
@@ -129,7 +175,10 @@ section div a:nth-of-type(2) img {
 
 
 /*tekst*/
+main > div:first-of-type img {
+    width: 100%;
 
+}
 
 
 
@@ -205,7 +254,7 @@ a {
     color: #ffffff;
     border: 1px solid #73d700;
     font-family: "Roboto Condensed", "Arial", sans-serif;
-    font-weight: 400;
+
 }
 
 .button:hover {
@@ -256,9 +305,11 @@ fieldset button {
 
 
 @media screen and (min-width:44em) {
+/*
     body {
         background-image: url('../images/hetverhaal.png');
     }
+*/
 
 
 

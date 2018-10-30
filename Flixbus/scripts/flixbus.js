@@ -24,7 +24,7 @@ var hartjes = document.querySelectorAll('.hartje');
 var favlijst = document.querySelector('nav ul li:nth-of-type(3) img');
 
 var download = document.querySelectorAll('.download');
-var downloadlijst = document.querySelector('nav ul li:nth-of-type(3)');
+var downloadlijst = document.querySelector('nav ul li:nth-of-type(2) img');
 
 
 function sorterentoggle (){
@@ -52,7 +52,7 @@ function hartjeKlik(event) {
         function() {
             favlijst.src= "../images/icoon_hartje_wit_plus1.gif";
         }
-        , 150
+        ,400
     );
 }
 
@@ -74,7 +74,7 @@ function downloadKlik(event) {
             downloadlijst.src=
                 "../images/icon_downdoad_wit_1.gif";
         }
-        , 350
+        ,5000
     );
 
 }

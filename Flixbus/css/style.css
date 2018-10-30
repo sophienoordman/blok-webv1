@@ -98,6 +98,8 @@ main div:first-child button {
     padding: 1em;
     width: 50%;
     font-size: 1em;
+    font: inherit;
+    font-weight: 400;
 }
 
 main form {
