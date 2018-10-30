@@ -57,6 +57,7 @@ function hartjeKlik(event) {
 }
 
 
+https://sophienoordman.github.io/blok-webv1/images/icoon_hartje_wit_plus1.gif
 
 function downloadKlik(event) {
     event.preventDefault();
@@ -66,7 +67,7 @@ function downloadKlik(event) {
     if (download.classList.contains('bij')) {
         download.classList.remove('bij');
         console.log(download.src);
-        download.src = "../images/icon_downloaden_orangje.gif";
+        download.src = "https://sophienoordman.github.io/blok-webv1/Flixbus/images/icon_downloaden_orangje.gif";
         console.log(download.src);
     } else {
         download.classList.add('bij');
