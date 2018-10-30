@@ -73,29 +73,31 @@ section:first-of-type {
     margin-right: auto;
 }
 
-section h1 {
+section:first-of-type h1 {
     padding-top: 0.5em;
     padding-bottom: 0.2em;
 
 }
 
+
 /*onderrij*/
-section div {
+section:first-of-type div {
     display: flex;
     justify-content: flex-end;
-    margin: 0.5em 0em 0.5em 0em;
+    margin-top: 0.5em;
     align-items: center;
     max-width: 40em;
 }
 
 
+
 /*download*/
-section div > a:first-of-type {
+section:first-of-type div > a:first-of-type {
     margin-right: auto;
     margin-left: 0.5em;
 }
 
-section div > a img {
+section:first-of-type div > a img {
     max-height: 2.9em;
     max-width: 2.9em;
     min-width: 2.5em;
@@ -103,11 +105,68 @@ section div > a img {
 
 }
 
-/*reacties*/
-section:nth-of-type(2) {
-    margin-bottom: 10em;
+
+/*sterren*/
+section:first-of-type div div {
+    background-color: #f1f1f1;
+    border-radius: 1.5em;
+    display: flex;
+    padding: 0.3em;
+    align-items: center;
+    margin: 0em 1em 0em 1em;
+
 }
 
+
+/*favorieten*/
+section div a:nth-of-type(2) img {
+    min-width: 2.5em;
+    max-height: 2.9em;
+    max-width: 2.9em;
+    margin-right: 1em;
+    border: 0.1em solid #73d700;
+    border-radius: 5px;
+    padding: 0.3em;
+
+}
+
+
+/*reacties*/
+section:nth-of-type(2) {
+    margin-bottom: 5em;
+    padding: 1em;
+    max-width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+/*    background: #f1f1f1;*/
+}
+
+section:nth-of-type(2) > div {
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 10em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+section:nth-of-type(2) > div h2 {
+    margin-bottom: 0.8em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #444444;
+}
+
+section:nth-of-type(2) > div article {
+        padding: 1em;
+    background: #f1f1f1;
+    margin: 1em 0em 1em 0em;
+    border-radius: 5px;
+}
+
+/*verhaal afbeelding*/
+main > div:first-of-type img {
+    width: 100%;
+
+}
 
 
 /*Gelezen balk*/
@@ -136,17 +195,6 @@ section:nth-of-type(3) button {
 }
 
 
-/*sterren*/
-section div div {
-    background-color: #f1f1f1;
-    border-radius: 1.5em;
-    display: flex;
-    padding: 0.3em;
-    align-items: center;
-    margin: 0em 1em 0em 1em;
-
-}
-
 section div div p:nth-of-type(1) {
     margin: 0em 0.5em;
 }
@@ -160,28 +208,6 @@ section div div p:nth-of-type(2) {
 }
 
 
-/*favorieten*/
-section div a:nth-of-type(2) img {
-    min-width: 2.5em;
-    max-height: 2.9em;
-    max-width: 2.9em;
-    margin-right: 1em;
-    border: 0.1em solid #73d700;
-    border-radius: 5px;
-    padding: 0.3em;
-
-}
-
-
-
-/*tekst*/
-main > div:first-of-type img {
-    width: 100%;
-
-}
-
-
-
 /*forms*/
 
 
@@ -190,24 +216,32 @@ main > div:first-of-type img {
 fieldset {
     border: 1px solid #c8c8c8;
     border-radius: 5px;
-    margin-top: 0.5em;
+    margin-top: 1em;
     margin-bottom: 1em;
 }
 
+
+fieldset div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/*
 fieldset div {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+*/
 
-
-label {
-    display: block;
-
-}
-
-label:last-of-type {
-    margin-bottom: 1em;
+textarea {
+    width: 100%;
+    min-height: 7em;
+    font-family: inherit;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    font-size: 0.9em;
+    border: 1px solid #f1f1f1;
 }
 
 input {
@@ -217,6 +251,8 @@ input {
     font-size: 1em;
     margin: 0.3em;
 }
+
+
 
 
 /*article*/
@@ -281,6 +317,7 @@ fieldset button {
     color: #ffffff;
     background-color: #ffad01;
     border: 1px solid #ffad01;
+    font-family: inherit;
 }
 
 
