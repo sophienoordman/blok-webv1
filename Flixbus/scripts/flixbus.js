@@ -63,10 +63,12 @@ function downloadKlik(event) {
 
     if (download.classList.contains('bij')) {
         download.classList.remove('bij');
-        download.src = "images/icon_downloaden_orangje.gif";
+        console.log(download.src);
+        download.src = "../images/icon_downloaden_orangje.gif";
+        console.log(download.src);
     } else {
         download.classList.add('bij');
-        download.src = "images/icon_downloaden_grijs.svg";
+        download.src = "../images/icon_downloaden_grijs.svg";
     };
 
     setTimeout(
