@@ -39,7 +39,7 @@ function hartjeKlik(event) {
     event.preventDefault(); // wat je normaal doet, doe het niet
     var hartje = event.target; // event.target = het geklikte element (als het goed is de img);
     console.log(hartje);
-    console.log(hartje.src);
+    console.log(hartje.getAttribute("src"));
     // check of hartje al aangeklikt is of niet door ' aan' class te bekijken
     if (hartje.classList.contains('aan')) {
         hartje.classList.remove('aan'); // hartje was aan, dus remove aan
