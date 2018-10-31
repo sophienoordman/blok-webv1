@@ -38,21 +38,14 @@ function filtertoggle (){
 function hartjeKlik(event) {
     event.preventDefault(); // wat je normaal doet, doe het niet
     var hartje = event.target; // event.target = het geklikte element (als het goed is de img);
+    console.log(hartje);
     // check of hartje al aangeklikt is of niet door ' aan' class te bekijken
     if (hartje.classList.contains('aan')) {
         hartje.classList.remove('aan'); // hartje was aan, dus remove aan
-
-
-
-        hartje.setAttribute("src", "https://sophienoordman.github.io/blok-webv1/Flixbus/images/icon_hartje_groen.svg");
-        //hartje.src = "../images/icon_hartje_groen_leeg.gif";
+        hartje.src = "../images/icon_hartje_groen_leeg.gif";
     } else {
-        console.log("hier dan");
-        console.log(hartje);
         hartje.classList.add('aan'); // hartje was uit, dus add aan
-        hartje.src = "https://sophienoordman.github.io/blok-webv1/Flixbus/images/icon_hartje_groen.svg";
-        //hartje.src = "../images/icon_hartje_groen.gif";//hier gif plaatsen
-        console.log(hartje.getAttribute("src");
+        hartje.src = "../images/icon_hartje_groen.gif";//hier gif plaatsen
     };
 
     setTimeout(
@@ -62,8 +55,6 @@ function hartjeKlik(event) {
         ,400
     );
 }
-
-
 
 function downloadKlik(event) {
     event.preventDefault();

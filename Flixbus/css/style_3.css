@@ -358,5 +358,8 @@ fieldset button {
         padding-bottom: 20em;
     }
 
+    section:nth-of-type(2) {
+    margin-bottom: -15em;
+    }
 
 }
